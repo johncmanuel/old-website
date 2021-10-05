@@ -1,0 +1,28 @@
+{
+    "plugins": [
+        "postcss-flexbugs-fixes",
+        [
+            "@fullhuman/postcss-purgecss",
+            {
+                "content": [
+                    "./public/**/*.css",
+                    "./public/**/*.module.css", 
+                    "./pages/**/*.js", 
+                    "./components/**/*.js"
+                ]
+            }
+        ],
+        [
+            "postcss-preset-env",
+            {
+                "autoprefixer": {
+                    "flexbox": "no-2009"
+                },
+                "stage": 3,
+                "features": {
+                    "custom-properties": false
+                }
+            }
+        ]
+    ]
+}

@@ -1,0 +1,58 @@
+/* Bookshelf pagination */
+.page-zero, .previous, .next-page, .page-max-count {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.page-num {
+    width: 50%;
+    text-align: center; 
+    padding-top: 7px;
+}
+
+#rows-dropdown {
+    padding-left: 15px;
+}
+
+.book-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#bookshelf-landing-img {
+    /* background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); */
+    background-image: url('../imgs/aurora.jpg');
+}
+
+@media (max-width: 991px) {
+    .pagination-mobile {
+        display: block;
+    }
+
+    .page-zero, .previous, .next-page, .page-max-count {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .page-num, .input-group-mobile {
+        width: 100%;
+    }
+
+    .page-num {
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
+
+    #rows-dropdown {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+
+    #page-form {
+        width: 100%;
+    }
+
+    .bookshelf-h {
+        text-align: center;
+    }
+}

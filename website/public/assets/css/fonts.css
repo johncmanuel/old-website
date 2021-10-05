@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Gravity-Regular";
+    src: 
+        url("/assets/css/Gravity-Regular.woff2") format('woff2'),
+        url("/assets/css/Gravity-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "Gravity-Book";
+    src: 
+        url("/assets/css/Gravity-Book.woff2") format('woff2'),
+        url("/assets/css/Gravity-Book.woff") format('woff'),
+}
+
+@font-face {
+    font-family: "Adobe-Garamond-Pro-Regular";
+    src: 
+        url("/assets/css/AGaramondPro-Regular.woff2") format('woff2'),
+        url("/assets/css/AGaramondPro-Regular.woff") format('woff'),
+}
+
+@font-face {
+    font-family: "Proxima-Nova-Alt-Bold";
+    src: 
+        url("/assets/css/Proxima-Nova-Alt-Bold.woff2") format('woff2'),
+        url("/assets/css/Proxima-Nova-Alt-Bold.woff") format('woff')
+}

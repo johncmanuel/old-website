@@ -1,0 +1,80 @@
+
+/* 
+  It would've been more efficient if this was a .module.css file, but the names aren't
+  the same in the DOM, thus causing '.hide and .show classes' to function incorrectly. 
+*/
+
+
+/* Mobile */
+#social-media-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform .3s cubic-bezier(0, .52, 0, 1);
+  overflow: scroll;
+  z-index: 1000;
+}
+ 
+#social-media-menu.hide {
+  transform: translate3d(-100vw, 0, 0);
+}
+ 
+#social-media-menu.show {
+  transform: translate3d(0vw, 0, 0);
+  overflow: hidden;
+}
+
+/* Social media Links at the front */
+.social-links-home, .social-media-desktop {
+  position: absolute;
+  top: 30%;
+}
+
+.social-links-home-item, .social-links-home-item-desktop {
+  padding: 15px;
+}
+
+.social-icon-img, .social-icon-img-desktop {
+  height: 50px;
+  width: auto;
+}
+
+/* Arrow button that triggers the menu */
+#arrow-left {
+    transform: translateY(47vh) translateX(2vw);
+}
+
+/* For the bigger devices */
+@media (min-width: 992px) {
+  /* I might include another library (React-Socks?) to render these components instead of hiding them in order to improve
+     performance */
+  #social-media-menu, #arrow-left, .social-links-home, .social-links-home-item, .social-icon-img {
+    display: none;
+  }
+}
+
+/* For the smaller devices */
+@media (max-width: 991px) {
+  .social-links-home {
+    top: auto;
+    bottom: 20%;
+  }
+
+  .social-links-home-item {
+    padding: 10px;
+  }
+
+  .social-icon-img {
+    padding: 2px;
+    padding-top: 10px;
+    height: 60px;
+  }
+
+  .social-media-desktop {
+    display: none;
+  }
+}

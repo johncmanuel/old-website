@@ -1,0 +1,19 @@
+{
+    "SKILLS": [
+        {
+            "title": "Web Development",
+            "framework": [
+                "Node.js",
+                "React.js",
+                "Next.js",
+                "Bootstrap",
+                "jQuery"
+            ],
+            "languages": [
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ]
+        }
+    ]
+}

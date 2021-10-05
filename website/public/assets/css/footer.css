@@ -1,0 +1,113 @@
+.footer {
+    font-family: "Gravity-Book", sans-serif;
+    background-color: #26262a;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    text-align: center !important;
+    border-style: hidden;
+    margin: auto;
+}
+
+.footer-motto {
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer-nav-group {
+    text-decoration: none;
+    padding-top: 50px;
+}
+
+.footer-nav-items {
+    text-decoration: none !important;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white !important;
+    letter-spacing: 0.1em;
+    opacity: 1;
+  }
+
+.footer-nav-items:hover {
+    color: dimgrey;
+    opacity: 0.6;
+  }
+
+.footer-copyright-section {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.copyright-message {
+    font-family: "Gravity-Book", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    color: darkgrey;
+}
+
+.footer-unique-motto {
+    padding-bottom: 20px;
+    font-size: 41px;
+    color: darkgrey;
+}
+
+.social-icon-footer-img {
+    height: 50px;
+    width: auto;
+}
+
+.social-link-list {
+    padding-inline-start: 0px;
+}
+
+.social-display {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.social-link-list, .social-icon, .social-link {
+    transition: all;
+    transition-timing-function: ease-out, ease-out;
+    transition-duration: 0.17s;
+}
+
+.social-link-list:hover .social-icon {
+    opacity: 0.3;
+}
+
+.social-link-list:hover .social-icon:hover {
+    opacity: 1;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .footer-nav-items {
+      display: inline-block;
+    }
+}
+
+/* Smaller devices (phones, tablets, etc.) */
+@media only screen and (max-width: 680px) {
+    .footer-nav-items {
+        display: block !important;
+        width: 100% !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+      }
+
+    .footer-nav-group {
+        padding-top: 20px;
+    }
+
+    .social-display {
+        display: block;
+        padding-top: 35px;
+    }
+
+    .social-icon-footer-img {
+        height: 70px;
+    }
+}

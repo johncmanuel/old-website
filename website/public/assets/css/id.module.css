@@ -1,0 +1,19 @@
+/* For smaller devices */
+@media (max-width: 991px) {
+    .synposis, .genre {
+        text-align: center;
+    }
+
+    .synposis-text {
+        text-align: justify;
+    }
+}
+
+.title {
+    text-align: center;
+}
+
+.synposis-text {
+    font-size: 1em;
+    line-height: 2;
+}

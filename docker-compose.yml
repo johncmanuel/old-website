@@ -1,0 +1,75 @@
+###################
+# FOR DEVELOPMENT #
+###################
+
+version: '3.8'
+
+services:
+
+    # Database
+    db:
+        # Using custom mysql image
+        image: db
+        command: --default-authentication-plugin=mysql_native_password
+        container_name: mysql
+        restart: always
+        build: ./db
+        volumes:
+            - ./db/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+        environment:
+            MYSQL_ROOT_PASSWORD: mysql
+            MYSQL_DATABASE: website
+        ports:
+            - "3308:3306"
+
+    # Main website
+    nextjs:
+        image: website
+        container_name: personalwebsite
+        hostname: personalwebsite
+        ports:
+            - "3000:3000"
+        links: 
+            - db
+        depends_on: 
+            - db
+        build: ./website
+
+    # Reverse proxy
+    # nginx:
+    #     image: nginx:alpine
+    #     container_name: website_nginx
+    #     hostname: website_nginx
+    #     build: ./nginx
+    #     volumes:
+    #         - ./nginx:/etc/nginx/conf.d
+    #         # - ./certbot/conf:/etc/letsencrypt
+    #         # - ./certbot/www:/var/www/certbot
+    #     ports:
+    #         - "80:80"
+    #         - "443:443"
+    #     links: 
+    #         - nextjs
+    #     restart: always
+
+    # Cronjob to add data to database
+    cronjob:
+        image: cronjob
+        container_name: cronjob
+        build: ./cronjob
+        links:
+            - db
+            - nextjs
+        depends_on:
+            - db
+        restart: always
+        ports:
+            - "3000"
+
+    # Automatic renewal of SSL
+    # certbot:
+    #     image: certbot/certbot
+    #     container_name: certbot
+    #     volumes:
+    #         - ./certbot/conf:/etc/letsencrypt
+    #         - ./certbot/www:/var/www/certbot

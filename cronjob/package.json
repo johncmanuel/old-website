@@ -1,0 +1,18 @@
+{
+  "name": "cronjob",
+  "version": "1.0.0",
+  "description": "Background processing server for my website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Carlo Manuel",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cron": "^1.8.2",
+    "dotenv": "^8.2.0",
+    "mysql": "^2.18.1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "ITEMS": [
+        {
+            "item": "Home",
+            "link": "/"
+        },
+        {
+            "item": "Software",
+            "caption": "Check out what projects I've made!",
+            "link": "/software"
+        },
+        {
+            "item": "Writing",
+            "caption": "Take a look at my writing!",
+            "link": "/writing"
+        },
+        {
+            "item": "Bookshelf",
+            "caption": "Keep track of what I've been reading!",
+            "link": "/bookshelf"
+        }
+    ]
+}

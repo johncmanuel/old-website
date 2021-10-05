@@ -1,0 +1,29 @@
+{
+    "HOME_ITEMS": 
+    [
+        {
+            "name": "YouTube",
+            "link": "https://www.youtube.com/channel/UCwmDHRVIwqhV-zRVavMVOsw",
+            "pic": "/assets/imgs/icons/youtube.png",
+            "alt_text": "YouTube Icon"
+        },
+        {
+            "name": "GitHub",
+            "link": "https://github.com/johncmanuel",
+            "pic": "/assets/imgs/icons/github.png",
+            "alt_text": "GitHub Icon"
+        },
+        {
+            "name": "LinkedIn",
+            "link": "https://www.linkedin.com/in/john-carlo-manuel-60930b170/",
+            "pic": "/assets/imgs/icons/linkedIn.png",
+            "alt_text": "LinkedIn Icon"
+        },
+        {
+            "name": "Email",
+            "link": "mailto:john@johncarlomanuel.com",
+            "pic": "/assets/imgs/icons/email.png",
+            "alt_text": "Email Icon"
+        }
+    ]
+}

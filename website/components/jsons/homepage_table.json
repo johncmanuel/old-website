@@ -1,0 +1,65 @@
+{
+    "TABLE": [
+        {
+            "title": "Software Development",
+            "svg_id": "software-dev-svg",
+            "category": [
+                {
+                    "name": "Main Languages: ",
+                    "values": [
+                        "Python",
+                        "JavaScript"
+                    ]
+                },
+                {
+                    "name": "*Experience In: ",
+                    "values": [
+                        "Full Stack Development",
+                        "Web Scraping",
+                        "Graphical User Interfaces"
+                    ]
+                },
+                {
+                    "name": "Developer Tools: ",
+                    "values": [
+                        "Visual Studio Code",
+                        "Atom",
+                        "Git",
+                        "GitHub",
+                        "Windows Terminal"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Writing",
+            "svg_id": "writing-svg",
+            "category": [
+                {
+                    "name": "Emphasis: ",
+                    "values": [
+                        "Narrations",
+                        "World Building",
+                        "Social / Political Commentary"
+                    ]
+                },
+                {
+                    "name": "Main Genres: ",
+                    "values": [
+                        "Fantasy",
+                        "Young Adult"
+                    ]
+                },
+                {
+                    "name": "Writing Tools: ",
+                    "values": [
+                        "Microsoft Word",
+                        "Google Docs",
+                        "My Imagination"
+                    ]
+                }
+            ]
+        }
+
+    ]
+}

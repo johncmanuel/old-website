@@ -1,0 +1,14 @@
+{
+    "NOVELS": [
+        {
+            "name": "20 Years",
+            "cover": "/assets/imgs/covers/20yrs.jpg",
+            "alt": "20 Years book cover",
+            "genre": "Contemporary Fantasy, Low Fantasy, Sword and Sorcery",
+            "synposis": "Seven students from the magical school of Nalicard, as well as an experienced knight, were chosen by the king of England to find and unearth an ancient artifact that supposedly granted powers beyond limits in order to stop the war in mainland Europe. The king's expedition, composed of those the king has selected, must be kept a secret from the world; however, a couple of notorious groups caught the word and strived to obtain the artifact for their own nefarious reasons. To make such matters worse, another person, or an entity, is also on the hunt, in secret.",
+            "cover_credits": "Miranda Lee",
+            "format": "Paperback",
+            "link": "https://www.amazon.com/dp/B08JRJ1YV6"
+        }
+    ]
+}

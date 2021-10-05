@@ -1,0 +1,9 @@
+#writing-landing-img {
+    background-image: url('../imgs/paper.jpg');
+}
+
+@media (max-width: 991px) {
+    .writing-h {
+        text-align: center;
+    }
+}
